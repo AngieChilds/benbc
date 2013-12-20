@@ -9,7 +9,8 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
 gem 'compass-rails'
-gem 'foundation-rails'
+gem 'zurb-foundation'
+  
 end
 
 group :test do
