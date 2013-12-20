@@ -1,0 +1,34 @@
+<div class="row">     
+   <div class="large-9 push-3 columns" >
+ 
+<p>
+  <strong>Title:</strong>
+  <%= @general.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @general.author %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @general.publisher %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @general.year %>
+</p>
+
+<p>
+  <strong>More:</strong>
+  <%= @general.more %>
+</p>
+
+<%= link_to 'Edit', edit_general_path(@general) %> |
+<%= link_to "Back", reading_list_path %>
+
+
+</div>
+  </div>

@@ -1,0 +1,34 @@
+  <div class="row">     
+   <div class="large-9 push-3 columns" >
+ 
+<p>
+  <strong>Title:</strong>
+  <%= @discipleship.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @discipleship.author %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @discipleship.publisher %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @discipleship.year %>
+</p>
+
+<p>
+  <strong>More:</strong>
+  <%= @discipleship.more %>
+</p>
+<p>
+<%= link_to 'Edit', edit_discipleship_path(@discipleship) %> |
+<%= link_to "Back", reading_list_path %>
+
+
+</div>
+  </div>

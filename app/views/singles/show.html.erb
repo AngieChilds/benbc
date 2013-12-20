@@ -1,0 +1,35 @@
+<div class="row">     
+   <div class="large-9 push-3 columns" >
+ 
+
+<p>
+  <strong>Title:</strong>
+  <%= @single.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @single.author %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @single.publisher %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @single.year %>
+</p>
+
+<p>
+  <strong>More:</strong>
+  <%= @single.more %>
+</p>
+
+<%= link_to 'Edit', edit_single_path(@single) %> |
+<%= link_to "Back", reading_list_path %>
+
+
+</div>
+  </div>

@@ -1,0 +1,30 @@
+<h5>EVANGELISM</h5>
+<%= link_to 'New Book', new_evangelism_path %>
+<table class="horizontal_table" style="width: 100%; height: 10px;" border="0">
+  <thead>
+    <tr>
+      <th width="38%">Title</th>
+      <th width="25%">Author</th>
+      <th width="15%">Publisher</th>
+      <th width="10%">Year</th>
+      <th width="10%">More</th>
+       <th width="2%"></th>
+      </tr>
+  </thead>
+  <tbody>
+    <% @evangelisms.each do |evangelism| %>
+      <tr>
+        <td width="38%"><%= evangelism.title %></td>
+        <td width="25%"><%= evangelism.author %></td>
+        <td width="15%"><%= evangelism.publisher %></td>
+        <td width="10%"><%= evangelism.year %></td>
+        <td width="10%"><%= link_to 'Show', evangelism %></td>
+        <td width="2%"><%= link_to 'x', evangelism, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+

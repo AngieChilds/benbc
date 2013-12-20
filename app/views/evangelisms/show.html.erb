@@ -1,0 +1,35 @@
+<div class="row">     
+   <div class="large-9 push-3 columns" >
+ 
+
+<p>
+  <strong>Title:</strong>
+  <%= @evangelism.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @evangelism.author %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @evangelism.publisher %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @evangelism.year %>
+</p>
+
+<p>
+  <strong>More:</strong>
+  <%= @evangelism.more %>
+</p>
+
+<%= link_to 'Edit', edit_evangelism_path(@evangelism) %> |
+<%= link_to "Back", reading_list_path %>
+
+
+</div>
+  </div>

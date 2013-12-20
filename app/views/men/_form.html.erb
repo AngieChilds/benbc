@@ -1,0 +1,46 @@
+<div class="row">     
+   <div class="large-9 push-3 columns" >
+ 
+<h1>New book</h1>
+
+
+<%= form_for(@man) do |f| %>
+  <% if @man.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@man.errors.count, "error") %> prohibited this man from being saved:</h2>
+
+      <ul>
+      <% @man.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :publisher %><br>
+    <%= f.text_field :publisher %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :more %><br>
+    <%= f.text_area :more %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Add New Book" %>
+  </div>
+<% end %>
+<%= link_to 'Back', reading_list_path %>
+  </div>
+</div>

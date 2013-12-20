@@ -1,0 +1,2 @@
+module ApologeticsHelper
+end
