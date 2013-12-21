@@ -1,0 +1,35 @@
+<div class="row">     
+   <div class="large-9 push-3 columns" >
+<% if object.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-error">
+      The form contains <%= pluralize(object.errors.count, "error") %>.
+    </div>
+    <ul>
+    <% object.errors.full_messages.each do |msg| %>
+      <li>* <%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+     
+     
+<div>
+  <h3> New Book </h3>
+    
+Title:   <%= f.text_field :title %>  
+Author:  <%= f.text_field :author %>
+Publisher: <%= f.text_field :publisher %>
+Year:  <%= f.number_field :year %>
+More: <%= f.text_area :more %>
+  </div>
+  <div class="actions">
+    <%= f.submit "New Book" %>
+  </div>
+<% end %>
+
+     </div>
+ </div>
+       

@@ -1,5 +1,7 @@
 Benbc::Application.routes.draw do
-   
+ resources :users
+resources :sessions, only: [:new, :create, :destroy]  
+ 
   resources :postmodernisms
 
   resources :apologetics
@@ -25,6 +27,8 @@ Benbc::Application.routes.draw do
   match '/resources',    to: 'static_pages#resources',    via: 'get'
   match '/reading_list',    to: 'static_pages#reading_list',    via: 'get'
   match '/directions',   to: 'static_pages#directions',   via: 'get'
-end
+  match '/signup', to: 'users#new', via: 'get'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
  
-   
+end
