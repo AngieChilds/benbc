@@ -13,7 +13,7 @@ gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
  gem 'thin'
 gem 'zurb-foundation'
-gem 'compass-rails', '~> 2.0.alpha.0'
+
 gem 'google_drive'
 
 group :development, :test do

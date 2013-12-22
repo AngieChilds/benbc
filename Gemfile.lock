@@ -34,7 +34,6 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.1.4)
-    chunky_png (1.2.9)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -43,12 +42,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    compass (0.12.2)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
-    compass-rails (2.0.alpha.0)
-      compass (>= 0.12.2, < 0.14)
     daemons (1.1.9)
     debug_inspector (0.0.2)
     erubis (2.7.0)
@@ -56,7 +49,6 @@ GEM
     execjs (2.0.2)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
-    fssm (0.2.10)
     google_drive (0.3.6)
       nokogiri (>= 1.4.4, != 1.5.2, != 1.5.1)
       oauth (>= 0.3.6)
@@ -164,7 +156,6 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   coffee-rails (= 4.0.1)
-  compass-rails (~> 2.0.alpha.0)
   google_drive
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
