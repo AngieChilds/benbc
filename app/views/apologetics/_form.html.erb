@@ -2,9 +2,9 @@
    <div class="large-9 push-3 columns" >
 <%= form_for(@apologetic) do |f| %>
  
- 
 <%= render 'shared/error_messages', object: f.object %>
-<h3> New Book </h3>
+<div class="field">
+     <h3> New Book </h3>
     
 Title:   <%= f.text_field :title %>  
 Author:  <%= f.text_field :author %>

@@ -1,22 +1,15 @@
 Benbc::Application.routes.draw do
- resources :users
-resources :sessions, only: [:new, :create, :destroy]  
- 
-  resources :postmodernisms
 
-  resources :apologetics
+  resources :topic_articles
 
-  resources :evangelisms
-
-  resources :singles
-
-  resources :women
-
-  resources :men
-
-  resources :generals
-
-  resources :discipleships
+ resources :postmodernisms
+ resources :apologetics
+ resources :evangelisms
+ resources :singles
+ resources :women
+ resources :men
+ resources :generals
+ resources :discipleships
 
  root 'welcome#index'
   match '/home',    to: 'static_pages#home',    via: 'get'

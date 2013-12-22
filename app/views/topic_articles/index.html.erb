@@ -1,0 +1,27 @@
+<div class="row">     
+   <div class="large-9 push-3 columns" >
+
+<h5>TOPICAL ARTICLES</h5>
+<%= link_to 'New Artical', new_topic_article_path %>
+<table class="horizontal_table" style="width: 100%; height: 10px;" border="0">
+  <thead>
+    <tr>
+      <th width="88%">Title</th>
+<th width="10%">More</th>
+       <th width="2%"></th>
+      </tr>
+
+  </thead>
+
+  <tbody>
+    <% @topic_articles.each do |topic_article| %>
+      <tr>
+        <td><%= topic_article.title %></td>
+        <td><%= link_to 'Show', topic_article %></td>
+        <td><%= link_to 'X', topic_article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+   </div>
+  </div>

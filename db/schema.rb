@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131219211420) do
+ActiveRecord::Schema.define(version: 20131222000001) do
 
   create_table "apologetics", force: true do |t|
     t.string   "title"
@@ -79,6 +79,13 @@ ActiveRecord::Schema.define(version: 20131219211420) do
     t.string   "publisher"
     t.integer  "year"
     t.text     "more"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "topic_articles", force: true do |t|
+    t.string   "title"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
