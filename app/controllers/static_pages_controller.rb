@@ -13,6 +13,7 @@ def outreach
 end
 def resources
 @topic_articles = TopicArticle.all
+@bookmarks = Bookmark.all
 end
 def reading_list
   @discipleships = Discipleship.all

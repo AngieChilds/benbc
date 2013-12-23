@@ -1,0 +1,30 @@
+<div class="row">    
+    
+    <div class="large-9 push-3 columns" >
+
+<%= link_to 'New Weblink', new_bookmark_path %>
+<h5>Weblinks</h5>
+<table class="horizontal_table" style="width: 100%; height: 10px;" border="0">
+  <thead>
+    <tr>
+      <th width="98%">Url</th>
+      <th width="2%"></th>
+      </tr>
+  </thead>
+
+
+  <tbody>
+    <% @bookmarks.each do |bookmark| %>
+      <tr>
+        <td width="98%"><%= link_to bookmark["url"], bookmark["url"] %></td>
+        <td width="2%"><%= link_to 'x', bookmark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+    </div>
+</div>

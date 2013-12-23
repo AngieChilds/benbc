@@ -1,7 +1,7 @@
 Benbc::Application.routes.draw do
+  resources :bookmarks
 
   resources :topic_articles
-
  resources :postmodernisms
  resources :apologetics
  resources :evangelisms
